@@ -1,7 +1,8 @@
 import React from 'react'
-import { Text, Image, StyleSheet, View } from 'react-native'
+import { Image, StyleSheet, View } from 'react-native'
 
 import Header from '../components/Header'
+import Text from '../components/Text'
 import farmLogo from '../../assets/logo.png'
 
 export default function Basket() {
@@ -10,15 +11,25 @@ export default function Basket() {
       <Header />
 
       <View style={style.container}>
-        <Text style={style.h1}>Cesta de verduras</Text>
+        <Text bold style={style.h1}>
+          Cesta de verduras
+        </Text>
 
         <View style={style.farmDetails}>
           <Image source={farmLogo} style={style.farmLogo} />
-          <Text style={style.h2}>Nome da fazenda</Text>
+
+          <Text bold style={style.h2}>
+            Nome da fazenda
+          </Text>
         </View>
 
-        <Text style={style.p}>Descrição</Text>
-        <Text style={style.lead}>R$ 50,00</Text>
+        <Text style={style.p}>
+          Descrição
+        </Text>
+
+        <Text bold style={style.lead}>
+          R$ 50,00
+        </Text>
       </View>
     </>
   );

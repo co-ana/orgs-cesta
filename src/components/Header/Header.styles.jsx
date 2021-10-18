@@ -1,4 +1,6 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet, Dimensions } from 'react-native'
+
+const screenWidth = Dimensions.get('screen').width
 
 const style = StyleSheet.create({
   banner: {
@@ -12,7 +14,6 @@ const style = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 16,
-    fontFamily: 'MontserratBold',
     fontSize: 16,
     color: '#FFFFFF',
   },
