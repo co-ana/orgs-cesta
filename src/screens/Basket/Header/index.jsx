@@ -1,18 +1,16 @@
 import React from 'react'
 import { Image } from 'react-native'
 
-import Text from '../Text'
+import Text from '../../../components/Text'
 import style from './Header.styles'
 
-import banner from '../../../assets/topo.png'
-
-const Header = () => {
+const Header = ({ title, banner }) => {
   return (
     <>
       <Image source={banner} style={style.banner} />
 
       <Text style={style.header} bold>
-        Detalhes da cesta
+        {title}
       </Text>
     </>
   )
