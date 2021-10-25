@@ -1,8 +1,10 @@
 import React from 'react'
-import { StyleSheet, View } from 'react-native'
+import { ScrollView, StyleSheet, View } from 'react-native'
 
 import Details from './Details'
 import Header from './Header'
+import List from '../../components/List'
+import basket from '../../mocks/basket'
 
 const style = StyleSheet.create({
   container: {
@@ -12,13 +14,15 @@ const style = StyleSheet.create({
 })
 
 const Basket = ({ header, details }) => (
-  <>
+  <ScrollView>
     <Header {...header} />
 
     <View style={style.container}>
       <Details {...details} />
+
+      <List items={basket.items} />
     </View>
-  </>
+  </ScrollView>
 )
 
 export default Basket

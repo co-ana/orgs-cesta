@@ -1,7 +1,9 @@
 import React from 'react'
 import { Image, View } from 'react-native'
 
+import Button from '../../../components/Button'
 import Text from '../../../components/Text'
+import List from '../../../components/List'
 import style from './Details.styles'
 
 const Details = ({ name, description, price, farm }) => (
@@ -23,6 +25,8 @@ const Details = ({ name, description, price, farm }) => (
     <Text bold style={style.lead}>
       {price}
     </Text>
+
+    <Button onPress={() => console.log("clicou em comprar")}>Comprar</Button>
   </>
 )
 
