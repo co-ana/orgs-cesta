@@ -3,18 +3,18 @@ import farmLogo from '../../assets/logo.png'
 
 const basket = {
   header: {
-    title: "Detalhes da cesta",
     banner,
+    title: 'Detalhes da cesta',
   },
   details: {
-    name: "Cesta de verduras",
-    description: "Description",
-    price: "R$ 40,00",
+    name: 'Cesta de verduras',
+    description: 'Description',
+    price: 'R$ 40,00',
     farm: {
-      name: "Nome da fazenda",
+      name: 'Nome da fazenda',
       logo: farmLogo,
     },
-  }
+  },
 }
 
 export default basket
